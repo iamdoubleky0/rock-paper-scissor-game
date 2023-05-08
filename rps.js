@@ -12,7 +12,7 @@ scissorButton.addEventListener('click', () => playRound('scissor'));
 
 function playRound(playerChoice) {
   const choices = ['rock', 'paper', 'scissor'];
-  const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  const computerChoice = choices[Math.floor(Math.random() * 3)];
 
   let winner;
   if (playerChoice === computerChoice) {
